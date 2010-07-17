@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3153
+
+/* one-line CSS (see http://neutroncreations.com/blog/single-line-vs-multi-line-css-plus-textmate-tips/) */
+header h1 { float: left;  width: 155px; height: 50px;  }
+
+/* Multiline CSS */
+header h1 {
+  float: left;
+  width: 155px;
+  height: 50px;
+}
+
+Which to choose? One line CSS is easier to scan through and saves space, but multi-line CSS is easier to grep and edit.
+
+This script sets you up so you edit and save multi-line CSS, but when you turn folding on, everything´s compressed on one line so you can scan through it easier.
+
+Controls are vim´s standard for text folding:
+zo and zc: Open and Close fold (set multiline, set oneline)
+zR and zM: Reopen and Close all (globally set multiline, globally set oneline)
+zj, zk: go down and up a fold (CSS block).
+
